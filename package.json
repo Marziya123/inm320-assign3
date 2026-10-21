@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "sass": "sass public/assets/scss/style.scss public/assets/css/style.css --watch",
+  "server": "lite-server --baseDir=\"public\"",
+  "dev": "concurrently \"npm run sass\" \"npm run server\""
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,5 +16,13 @@
     "concurrently": "^10.0.6",
     "lite-server": "^2.6.1",
     "sass": "^1.105.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marziya123/inm320-assign3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marziya123/inm320-assign3/issues"
+  },
+  "homepage": "https://github.com/Marziya123/inm320-assign3#readme"
 }
